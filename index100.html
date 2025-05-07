@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Website</title>
+    <style>
+        /* ===== Hero Banner ===== */
+        #hero {
+            position: relative; /* parent for absolute children */
+            height: 60vh; /* 60% of viewport height */
+            overflow: hidden; /* hide particles outside box */
+            background-color: #fffbe6; /* Match the animation background */
+        }
+        .site-title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* perfect centre */
+            color: #2b67af; /* Match the animation color scheme */
+            font-size: 4rem;
+            text-shadow: 0 0 12px rgba(255, 255, 255, 0.8);
+            z-index: 10; /* keep text above canvas */
+        }
+        body {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- HERO section: animation background + title -->
+    <header id="hero">
+        <h1 class="site-title">Welcome to My Site</h1>
+    </header>
+
+    <h1 style="text-align: center;"><b>The Appalachian Mountains</b></h1>
+
+    <p style="font-family: Arial; color: rgb(255, 203, 222);">
+        Known for their heavily forested terrain and rugged hiking trails, 
+        the Appalachian Mountains, also known simply as the Appalachians,
+        are a system of mountain ranges that stretch some 1,500 miles (2,400 km) south to
+        north from the U.S. state of Alabama to the Canadian province of Newfoundland and Labrador. - Peak Visor 
+    </p>
+
+    <p style="page-break-before: always">
+        While the geologic definition of the Appalachian Mountains does not technically include the hills in Mississippi,
+        it does include some of the mountains within the Canadian provinces of Quebec, New Brunswick, Nova Scotia, and Newfoundland and Labrador. 
+        The Canadian Appalachians are often considered a distinct system of ranges, 
+        though this is a geopolitical distinction rather than a geological one
+    </p>
+
+    <p style="font-family: Arial">
+        Geography of Appalachian-Mountains - The Appalachians formed a natural barrier between the eastern Coastal Plain and the Interior Lowlands of North America, playing a vital role in the development of the United States. For over a century, they were the critical barrier to the westward expansion of the British colonies.
+        "Appalachia" often refers to a distinct cultural region stretching from southern New York through Pennsylvania, West Virginia, Maryland, Virginia, Ohio, Kentucky, North Carolina, South Carolina, Georgia, Tennessee, Alabama, and Mississippi. However, it has a different definition in a geological context as a mountain range.
+        Geologically, the range is part of at least 16 states, including all the previously mentioned states plus Connecticut, Massachusetts, Vermont, New Hampshire, and Maine.
+    </p>
+
+    <img src="https://peakvisor.com/img/news/Appalachian-Mountains.jpg" alt="Appalachian-Mountains" width="300" height="300">
+
+    <!-- 1. p5.js library from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@latest/lib/p5.min.js"></script>
+    <!-- 2. YOUR sketch file -->
+    <script src="sketch.js"></script>
+</body>
+</html>
